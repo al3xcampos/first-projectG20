@@ -1,0 +1,175 @@
+*{ padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .3)
+
+
+}
+.contenedor{
+    width: 96%;
+    padding: 10px;
+    
+    display: grid;
+    gap: 1%;
+    grid-template-columns: 22% 66% 10%;
+    grid-template-areas:    "mi b md" ;
+}
+.menu-izq{
+grid-area: mi;
+display: flex;justify-content: start;align-items: center;
+}
+.menu-der{
+grid-area: md;
+display: flex;justify-content: flex-end;align-items: center;
+}
+.buscador-padre{
+    grid-area: b;
+    background:rgb(214, 209, 209);
+    border: none;border-radius: 30px;
+
+}
+.buscador{
+    width: 90%;
+    height: 100%;
+    grid-area: b;
+    background: none;
+    border: none;border-radius: 30px;
+    
+        
+}
+.link-icono{
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    color: black;
+    border-radius: 24px;
+    line-height: 48px;
+   
+    text-align: center;
+}
+.img-perfil{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+.link-negro{
+    height: 48px;
+    
+    line-height: 48px;
+    padding: 0px 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 20px;
+}
+.link-negro:hover,.link-negro.activo{
+    background: black;
+    color: white;
+}
+.logotipo{
+    font-size: 27px;
+    padding: 14px;
+    color: red;
+}
+.contenedor-pin-portada{
+    position: relative;
+}
+.menu-pin{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    padding: 10px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.contenedor-grid{
+    width: 96%;
+    gap: 15px;
+    columns: 5;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.pin{
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+.menu-pin-top-item{
+    padding: 0 15px;
+    height: 48px;
+    background: red;
+    color: white;
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 24px;
+}
+.menu-pin-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.menu-pin-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.menu-pin-bottom-item{
+    background: rgb(255, 255, 255,.8);
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 15px;
+    color: black;
+}
+.item-icono{
+width: 30px;
+padding: 0;
+}
+.usuario{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.contenedor-descripcion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contenedor-pin-portada .menu-pin{
+opacity: 0;
+}
+.contenedor-pin-portada:hover .menu-pin{
+opacity: 1;
+}
+.icono-busqueda{
+    
+    padding-top: 17px;
+    width: 75px;
+    
+        
+}
+.link-icono-busqueda{
+    color: gray;
+    
+}
